@@ -1,0 +1,19 @@
+{
+  "name": "vektr-signaling-bridge",
+  "version": "1.0.0",
+  "description": "Vektr Tunnel Signaling Bridge — relays WebRTC handshake metadata between Node IDs. Never touches audio data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "socket.io": "4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.0"
+  }
+}
