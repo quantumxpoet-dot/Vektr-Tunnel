@@ -238,6 +238,9 @@ class PeerConnectionManager(
         return channel.send(buffer)
     }
 
+    /** Exposes the raw DataChannel so VektrDataStreamer can inject binary chunks directly. */
+    fun getDataChannel(): DataChannel? = dataChannel
+
     fun getDataChannelBufferedAmount(): Long {
         return dataChannel?.bufferedAmount() ?: 0L
     }
